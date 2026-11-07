@@ -1,0 +1,72 @@
+/* Vizion: dark dashboard theme inspired by the reference screenshot */
+
+:root {
+  --vz-bg: #141829;
+  --vz-sidebar: #181c31;
+  --vz-surface: #1d2139;
+  --vz-border: #2a2f4d;
+  --vz-accent: #3b82f6;
+  --vz-accent-soft: rgba(59, 130, 246, 0.15);
+  --vz-text: #e6e8f2;
+  --vz-muted: #8a90aa;
+  --vz-success: #22c55e;
+  --vz-danger: #ef4444;
+}
+
+html,
+body {
+  background: var(--vz-bg);
+  color: var(--vz-text);
+}
+
+.vz-card {
+  background: var(--vz-surface);
+  border: 1px solid var(--vz-border);
+  border-radius: 12px;
+}
+
+.vz-sidebar {
+  background: var(--vz-sidebar);
+  border-right: 1px solid var(--vz-border);
+}
+
+.vz-nav-item {
+  color: var(--vz-muted);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.vz-nav-item:hover {
+  color: var(--vz-text);
+  background: var(--vz-accent-soft);
+}
+
+.vz-nav-item.is-active {
+  color: #ffffff;
+  background: var(--vz-accent);
+}
+
+.vz-btn-primary {
+  background: var(--vz-accent);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.vz-table th,
+.vz-table td {
+  border-bottom: 1px solid var(--vz-border);
+}
+
+.vz-muted {
+  color: var(--vz-muted);
+}
+
+.vz-positive {
+  color: var(--vz-success);
+}
+
+.vz-negative {
+  color: var(--vz-danger);
+}
